@@ -5,14 +5,16 @@ import Header from '../components/header';
 
 const TicTacToePage = () => {
   return (
-    <div className="app">
-  <Header />
+  <div className="app ">
   <div className="content">
-  <h1>Jouer au Tic Tac Toe</h1>
+   <Header />
+   </div>
+   <div className="content app">
+   <h1>Jouer au Tic Tac Toe</h1>
     <TicTacToe />
-  </div>
-</div>
+    </div>
+    </div>
   );
 };
 
-export default TicTacToePage; 
+export default TicTacToePage;

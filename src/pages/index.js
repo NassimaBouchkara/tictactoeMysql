@@ -1,32 +1,18 @@
-import React, { useState } from 'react';
-import { Link } from 'gatsby';
+// src/pages/index.js (et src/pages/about.js)
+import React from 'react';
 import Header from '../components/header';
-import '@fortawesome/fontawesome-free/css/all.css';
 
 const HomePage = () => {
-  const [clicked, setClicked] = useState(false);
-
-  const handleClick = () => {
-    setClicked(true);
-  };
-
   return (
-    <div className="text-center">
-      <Header />
-      <h1 className="text-4xl font-bold mb-6 text-blue-500">Welcome to the Tic Tac Toe Game</h1>
-      <p className="mb-4 text-lg text-blue-400">Click on "Start Game" to begin.</p>
-      
-      {/* Link the "Start Game" button to the ChooseOpponentPage */}
-      <Link to="/choose" style={{ textDecoration: 'none' }}>
-        <button
-          className={`bg-green-500 hover:bg-green-600 focus:outline-none text-white font-bold py-2 px-4 rounded mx-auto block ${clicked ? 'bg-blue-500' : ''}`}
-          onClick={handleClick}
-        >
-          Start Game
-        </button>
-      </Link>
+    <div >
+       <Header /> {/* Incluez le composant d'en-tête ici */}
+       <h1 className="text-4xl font-bold mb-4 text-blue-500 text-center">Bienvenue sur Mon Site !!</h1>
+      <p className="text-lg text-gray-600 mb-6">C'est ma page d'accueil. Explorez les liens de navigation pour en savoir plus.</p>
+      {/* Le contenu de votre page d'accueil */}
     </div>
-  );
+      );
 };
 
+
 export default HomePage;
+

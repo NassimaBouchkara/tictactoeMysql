@@ -2,14 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Ajoutez ces styles à votre fichier CSS */
-
-body {
-  
-  background-size: cover;
-  background-position: center;
-}
 
 .game {
   display: flex;
@@ -88,21 +81,17 @@ align-items: center;
 height: 100vh;
 margin: 0;
 }
-
-
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 1.5rem;
-  color: #ffffff;
- /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-  z-index: 1000; /* Assurez-vous que l'en-tête est au-dessus de tout le contenu */
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+padding: 1.5rem;
+color: #ffffff;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+background-color: #2f5b89; /* Couleur de fond de l'en-tête */
+z-index: 1000; /* Assurez-vous que l'en-tête est au-dessus de tout le contenu */
 }
-
-
 
 
 nav {
@@ -193,7 +182,7 @@ h1 {
 
 .background {
   /* Ajoutez ici les propriétés de fond que vous souhaitez utiliser */
-  background-image: url('../../public/favicon-32x32.png');
+  /* background-image: url('../../public/pic1.jpg'); */
   background-size: cover; /* Ajuste la taille pour remplir la zone */
   background-position: center; /* Centre l'image */
   /* Autres styles pour remplir la page */
